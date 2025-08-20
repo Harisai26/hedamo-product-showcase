@@ -1,70 +1,79 @@
-# Getting Started with Create React App
+*Hedamo Product Showcase
+This project is a responsive, card-based product information page built with React. It features a clean product summary that expands into an animated, detailed view with a modular layout inspired by modern user interfaces like the Samsung Weather app.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Note: You can replace the image URL above with a screenshot of your actual project.
 
-## Available Scripts
+Key Features
+Product Summary View: An attractive preview on the main page to entice users to learn more.
 
-In the project directory, you can run:
+Card-Based Details: A modular system where each product aspect (Features, Nutrition, Traceability, etc.) has its own distinct card.
 
-### `npm start`
+Smooth Animations: Integrated with framer-motion to provide fluid transitions between the summary and detailed views.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Responsive Design: A modern, mobile-first design that ensures a great user experience on all screen sizes.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Clean & Separated Code: The project is structured with separate components for better organization and maintainability.
 
-### `npm test`
+Technology Stack
+Frontend: React.js
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Styling: Plain CSS (with a structure inspired by utility-first principles)
 
-### `npm run build`
+Animations: Framer Motion
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Getting Started
+Follow these instructions to get a copy of the project up and running on your local machine for development and testing purposes.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Prerequisites
+You need to have Node.js and npm (or yarn) installed on your machine.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Node.js
 
-### `npm run eject`
+npm / yarn
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Installation
+Clone the repository
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+git clone [https://github.com/your-username/your-repo-name.git](https://github.com/your-username/your-repo-name.git)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Navigate to the project directory
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+cd your-repo-name
 
-## Learn More
+Install dependencies
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+npm install
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+or
 
-### Code Splitting
+yarn install
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Install the animation library
 
-### Analyzing the Bundle Size
+npm install framer-motion
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+or
 
-### Making a Progressive Web App
+yarn add framer-motion
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Run the development server
 
-### Advanced Configuration
+npm start
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+or
 
-### Deployment
+yarn start
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Open http://localhost:3000 to view it in the browser.
 
-### `npm run build` fails to minify
+File Structure
+The project follows a standard component-based structure to keep the code organized and reusable.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+src/
+|-- components/
+|   |-- DetailCard.js         # Card for individual product details
+|   |-- Icon.js               # SVG icon components
+|   |-- ProductDetailsView.js # The modal view with all detail cards
+|   |-- ProductSummaryCard.js # The main product preview card
+|-- App.js                    # Main application component
+|-- styles.css                # All styles for the application
